@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Seatwork 2</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body style="">
+<center><h1>Time Converter</h1></center>
+<div style="background-color:#7C96AB">
+	<hr>
+	<center> Second : <input type="number" id="second" value=""></center>
+	<hr>
+	<center>
+	<button type="button" class="btn btn-primary" onclick="Seconds1()">To Minutes</button>
+	<button type="button" class="btn btn-primary" onclick="Seconds2()">To Hours</button>
+	<button type="button" class="btn btn-primary" onclick="Seconds3()">To Days</button>
+	</center>
+	<hr>
+</div>
+<div style="background-color:#C0DBEA">
+	<hr>
+	<center> Minute : <input type="number" id="Minute" value=""></center>
+	<hr>
+	<center>
+	<button type="button" class="btn btn-info" onclick="Minute1()">To Seconds</button>
+	<button type="button" class="btn btn-info" onclick="minute2()">To Hours</button>
+	<button type="button" class="btn btn-info" onclick="Minute3()">To Days</button>
+	</center>
+	<hr>
+</div>
+<div style="background-color:#C7E9B0">
+	<hr>
+<center> Hour : <input type="number" id="Hour" value=""></center>
+	<hr>
+	<center>
+	<button type="button" class="btn btn-success" onclick="Hours1()">To Seconds</button>
+	<button type="button" class="btn btn-success" onclick="Hours2()">To Minutes</button>
+	<button type="button" class="btn btn-success" onclick="House3()">To Days</button>
+    </center>
+	<hr>
+</div>
+<div style="background-color:#E8A0BF">
+	<hr>
+<center>Day : <input type="number" id="Days" value=""></center>
+	<hr>
+	<center>
+	<button type="button" class="btn btn-danger" onclick="Days1()">To Seconds</button>
+	<button type="button" class="btn btn-danger" onclick="Days2()">To Minutes</button>
+	<button type="button" class="btn btn-danger" onclick="Days3()">To Hours</button>
+    </center>
+    <hr>
+</div>
+</body>
+<script type="text/javascript">
+	let x;
+	let y;
+	function Seconds1(){
+		let x = parseInt(document.getElementById("second").value);
+		let y = 60;
+		alert(x / y);
+	}
+	function Seconds2(){
+		let x = parseInt(document.getElementById("second").value);
+		let y = 3600;
+		alert(x / y);
+	}
+	function Seconds3(){
+		let x = parseInt(document.getElementById("second").value);
+		let y = 86400;
+		alert(x / y);
+	}
+	function Minute1(){
+		let x = parseInt(document.getElementById("Minute").value);
+		let y = 60;
+		alert(x * y);
+	}
+	function Minute2(){
+		let x = parseInt(document.getElementById("Minute").value);
+		let y = 60;
+		alert(x / y);
+	}
+	function Minute3(){
+		let x = parseInt(document.getElementById("Minute").value);
+		let y = 1440;
+		alert(x / y);
+	}
+	function Hours1(){
+		let x = parseInt(document.getElementById("Hour").value);
+		let y = 3600;
+		alert(x * y);
+	}
+	function Hours2(){
+		let x = parseInt(document.getElementById("Hour").value);
+		let y = 60;
+		alert(x * y);
+	}
+	function Hours3(){
+		let x = parseInt(document.getElementById("Hour").value);
+		let y = 24;
+		alert(x / y);
+	}
+	function Days1(){
+		let x = parseInt(document.getElementById("Days").value);
+		let y = 86400;
+		alert(x * y);
+	}
+	function Days2(){
+		let x = parseInt(document.getElementById("Days").value);
+		let y = 1440;
+		alert(x * y);
+	}
+	function Days3(){
+		let x = parseInt(document.getElementById("Days").value);
+		let y = 24;
+		alert(x * y);
+	}
+</script>
+</html>
